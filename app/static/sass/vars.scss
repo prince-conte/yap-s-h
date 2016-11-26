@@ -1,0 +1,132 @@
+
+// base
+$title_class = 'title'
+
+// paths
+$img_src-g = 'img\general'
+
+// layout
+$wrapper_padding = 20px
+$wrapper_width = 940px
+
+$wrapper_min_width = wrapper_width[1]
+$wrapper_max_width = wrapper_width[0]
+
+// text
+$base_size = 18px
+$font_size = base_size
+$line_height = 25px
+$font_color = #2d3e50
+$font_color_desc = #959595
+
+
+$main_color = #f72a32
+$main_color2 = #038ecd
+
+$main_color_gray = #7f8c8d
+
+
+
+$link_color = font_color
+$link_color_hover = main_color + 20%
+
+$news_t_color = font_color
+$news_t_color_h = main_color
+
+$link_color_invert = #000
+$link_color_invert_hover = link_color
+
+$text_link_color = link_color
+$text_link_color_hover = text_link_color + 20%
+
+$select_color = main_color
+
+$error_color = #e66a6a
+$error_border_color = #f4bebe
+
+
+
+// other
+$trans_speed = 0.2s
+
+// x  > 1200px // wide_desktop
+// x <= 1200px // desktop
+// x <= 1000px // tablet
+// x <= 760px  // small_tablet
+// x <= 650px  // wide_phone
+// x <= 530px  // phone
+// x <= 400px  // small_phone
+
+$screens = ( ("wide_desktop" 1201px) ("desktop" 1200px) ("tablet" 1000px) ("small_tablet" 760px) ("wide_phone" 650px) ("phone" 530px) ("small_phone" 400px) )
+$wrapper_widths = {
+	"wide_desktop": 1150px,
+	"desktop": 950px,
+	"tablet": 721px,
+	"small_tablet": 570px,
+	"wide_phone": 490px,
+	"phone": 370px,
+	"small_phone": 300px
+}
+
+
+
+
+
+
+
+
+// основной цвет
+$colfirm = $main_color
+    
+
+// второй цвет
+$colfirm2 = #2ea0f0
+    
+
+// третий цвет
+$colfirm3 = #284184
+    
+
+// цвет фона
+$colbg = #fff
+    
+
+// цвет фона (альтернативный)
+$colbg2 = #f8f8f8
+    
+
+// основной цвет текста
+$coltxt = $font_color
+    
+
+// альтернативный цвет текста (description)
+$coltxt2 = #333232
+    
+
+// альтернативный цвет текста (description и прочее)
+$coltxt3 = #bebebe
+  
+    
+// цвет границ
+$colb = #dbdbdb
+   
+    
+// фон footer
+$colf = #bebebe
+   
+    
+// фон header
+$colh = #132342
+ 
+
+// шрифт (основной)
+$fonttxt = 'roboto', sans-serif;
+ 
+
+// шрифт (жирный)
+$fontb = 'Conv_Proxima_Nova_Bold', sans-serif;
+
+
+    
+   
+

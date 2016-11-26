@@ -1,0 +1,31 @@
+{
+  "name": "yap-s-h",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince-conte/yap-s-h.git"
+  },
+  "author": "salvatore conte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prince-conte/yap-s-h/issues"
+  },
+  "homepage": "https://github.com/prince-conte/yap-s-h#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "jeet": "^7.1.0",
+    "node-bourbon": "^4.2.8",
+    "node-sass": "^3.13.0"
+  },
+  "dependencies": {
+    "gulp-haml": "^0.1.6"
+  }
+}
