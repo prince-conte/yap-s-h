@@ -6,5 +6,31 @@
     %link(rel="stylesheet" type="text/css" href="css/style.css")
     %script(type="text/javascript" src="js/main.js")
   %body
-    = File.read "../components/header/header.haml"
+    %header.h
+        .h_fade
+        .content
+            .h__info
+                %article
+                    %h1 Хотите быстро продать или сдать недвижимость?
+                    %p.description AidSale – это сервис, позволяющий разместить Ваше объявление одновременно на <br> <a href="#" alt="">65 сайтах</a> с аудиторией более <b>10 000 000</b> человек
+                    .button-block
+                        %a.but-blue(href="#") Попробуйте бесплатно
+                    
+                    %p.h_op-txt Бесплатная публикация Вашего объявления на трех площадках
+                    
+        .h__nav
+            .content
+                %ul.h__menu
+                    %li.h__logo
+                        %a(href="#")
+                            %img(src="img/logo.png")
+                            
+                    %li
+                        %a(href="#")
+                            .but-min Регистрация
+                            
+                    %li.h__log-in
+                        %a(href="#")
+                            %span Вход
+        
     %footer

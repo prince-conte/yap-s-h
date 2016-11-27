@@ -19,7 +19,7 @@ var input_haml = 'app/pages/*.haml';
 var output_haml = 'app/dev/';
 
 var autoprefixerOptions = {
-  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+  browsers: ['last 25 versions',]
 };
 
 
@@ -92,8 +92,11 @@ gulp.task('browserSync', function() {
 gulp.task('watch', ['browserSync','fonts','img', 'haml', 'sass', 'scripts'], function (){
   gulp.watch('app/**/*.sass', ['sass']);
   gulp.watch('app/components/**/*.js', ['sass']);
+  gulp.watch('app/static/**/*.+(scss|sass)', ['sass']);
   gulp.watch('app/static/js/**/*.js', ['scripts']);
   gulp.watch('app/static/img/**/*', ['img']);
+  gulp.watch('app/pages/**/*.haml', ['haml']);
+  gulp.watch('app/pages/**/*.haml', ['haml']);
   // Обновляем браузер при любых изменениях в HTML или JS
   gulp.watch('app/**/*.haml', browserSync.reload);
   gulp.watch('app/static/js/**/*.js', browserSync.reload);

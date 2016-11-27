@@ -9,6 +9,15 @@
     background-size: $s !important;
 }
 
+@mixin abs($d,$w,$h,$t,$l) {
+    position: absolute;
+    display: $d;
+    width: $w;
+    height: $h;
+    top:$t;
+    left: $l;
+}
+
 
 
 @mixin nl {
@@ -16,8 +25,13 @@
     padding: 0;
     text-indent: 0;
     list-style: none;
-    list-style-position: outside;
+    list-style-position: outside; 
 }
+
+
+
+
+
 
 @mixin cf {
     &:before,
@@ -40,4 +54,18 @@
     text-justify: newspaper;
 }
 
-// You can add your own mixins here:
+
+
+@mixin t-cell ($a) {
+    position: relative;
+    display: table-cell;
+    vertical-align: $a;       
+    
+}
+
+@mixin m-speed($n) {
+    -webkit-transition: all $n ;   
+    -moz-transition: all $n  ;  
+    -o-transition: all $n ;
+    transition: all $n ;
+}
