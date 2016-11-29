@@ -8,7 +8,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var haml = require('gulp-haml');
 var browserSync = require('browser-sync');
 var concat = require('gulp-concat');
-
+var spritesmith = require('gulp.spritesmith');
 
 
 
@@ -18,9 +18,35 @@ var output_sass = 'app/dev/css/';
 var input_haml = 'app/pages/*.haml';
 var output_haml = 'app/dev/';
 
-var autoprefixerOptions = {
-  browsers: ['last 25 versions',]
-};
+
+//var autoprefixerOptions = {
+//  browsers: ['last 25 versions',]
+//};
+
+
+
+gulp.task('sprite', function() {
+    var spriteData = 
+        gulp.src('app/static/ico/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.sass',
+                cssFormat: 'sass'
+            }));
+
+    spriteData.img.pipe(gulp.dest('app/dev/img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('app/static/sass/')); // путь, куда сохраняем стили
+});
+
+
+gulp.task('autoprefixer', () =>
+    gulp.src('app/components/*.+(scss|sass)')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+);
 
 
 

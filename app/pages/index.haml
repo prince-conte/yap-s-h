@@ -6,31 +6,58 @@
     %link(rel="stylesheet" type="text/css" href="css/style.css")
     %script(type="text/javascript" src="js/main.js")
   %body
-    %header.h
-        .h_fade
+    %header.header
+        .header_fade
+        .header_fade-black
         .content
-            .h__info
+            .header__info
                 %article
-                    %h1 Хотите быстро продать или сдать недвижимость?
+                    %h2 Хотите быстро продать или сдать недвижимость?
                     %p.description AidSale – это сервис, позволяющий разместить Ваше объявление одновременно на <br> <a href="#" alt="">65 сайтах</a> с аудиторией более <b>10 000 000</b> человек
                     .button-block
-                        %a.but-blue(href="#") Попробуйте бесплатно
+                        %a.button-blue(href="#") Попробуйте бесплатно
                     
-                    %p.h_op-txt Бесплатная публикация Вашего объявления на трех площадках
+                    %p.header_op-txt Бесплатная публикация Вашего объявления на трех площадках
                     
-        .h__nav
+        .header__nav
             .content
-                %ul.h__menu
-                    %li.h__logo
+                %ul.header__menu
+                    %li.header__logo
                         %a(href="#")
                             %img(src="img/logo.png")
                             
                     %li
                         %a(href="#")
-                            .but-min Регистрация
+                            .button-min Регистрация
                             
-                    %li.h__log-in
+                    %li.header__log-in
                         %a(href="#")
                             %span Вход
+                            
+    .logo-sites
+        .content
+            .logo-sites
+            
+                .logo-sites__item
+                    %img(src="img/logo/avito.png")
+                   
+                .logo-sites__item
+                    %img(src="img/logo/mail.png")
+                   
+                .logo-sites__item
+                    %img(src="img/logo/ya.png")
+                           
+                .logo-sites__item
+                    %img(src="img/logo/cian.png")
+                                   
+                .logo-sites__item
+                    %img(src="img/logo/mail.png")
+                                           
+                .logo-sites__item
+                    %img(src="img/logo/avito.png")
+                    
+    %section.type-services
+        .content
+            %h3 С нами легко продать или <a href="#">сдать в аренду</a>
         
     %footer

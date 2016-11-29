@@ -26,6 +26,9 @@
     "node-sass": "^3.13.0"
   },
   "dependencies": {
-    "gulp-haml": "^0.1.6"
+    "gulp": "^3.9.1",
+    "gulp-haml": "^0.1.6",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.2.1"
   }
 }
