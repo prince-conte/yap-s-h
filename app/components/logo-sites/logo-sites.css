@@ -1,0 +1,21 @@
+/* line 1, /Users/aleksandr/Desktop/yap-s-h/app/components/logo-sites/logo-sites.sass */
+.logo-sites {
+  height: 100px;
+  background: #f8f8f8; }
+
+/* line 7, /Users/aleksandr/Desktop/yap-s-h/app/components/logo-sites/logo-sites.sass */
+.logo-sites {
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+/* line 13, /Users/aleksandr/Desktop/yap-s-h/app/components/logo-sites/logo-sites.sass */
+.logo-sites__item {
+  padding: 0 10px;
+  justify-content: space-around;
+  flex-grow: 1; }
+  /* line 19, /Users/aleksandr/Desktop/yap-s-h/app/components/logo-sites/logo-sites.sass */
+  .logo-sites__item img {
+    max-width: 100%; }
+
+/*# sourceMappingURL=logo-sites.css.map */

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "special.css",
+  "sources": [
+    "special.sass"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI,CAAC,CAAC,CAAC,IAAI,GADd;;EAIN,QAAQ,CAAC,EAAE,CAAR;IACC,aAAa,EAAE,IAAK,GADpB",
+  "names": []
+}

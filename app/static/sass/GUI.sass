@@ -41,7 +41,50 @@
         border-color: $colfirm
     
     
+._blue
+    background: #fff
+    color $colfirm
+    border: solid 1px $colfirm 
+    color: $colfirm
+    &:hover
+        background: $colfirm
+        color: #fff
     
+    
+.title-description
+        
+    p
+        color: #fff
+        font-size: 24px
+        text-align: center
+        margin: 0
+        
+        a
+            display: inline-block
+            padding: 0 0 1px
+            position: relative
+            font-family: $fontb
+            +m-speed(.3s)
+                
+                
+                    
+        a:before
+            content: '';
+            display: block
+            position: absolute
+            bottom: 3px
+            left: 0px
+            width: 100%
+            height: 1px
+            border-bottom: dotted 2px #fff
+            +m-speed(.3s)
+            
+                
+        a:hover:before
+            border-bottom: dotted 2px $colfirm
+        
+        
+       
 
     
     

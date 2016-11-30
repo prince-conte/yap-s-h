@@ -1,0 +1,105 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$adv1-name: 'adv1'
+$adv1-x: 0px
+$adv1-y: 0px
+$adv1-offset-x: 0px
+$adv1-offset-y: 0px
+$adv1-width: 140px
+$adv1-height: 100px
+$adv1-total-width: 280px
+$adv1-total-height: 200px
+$adv1-image: 'adv.png'
+$adv1: (0px, 0px, 0px, 0px, 140px, 100px, 280px, 200px, 'adv.png', 'adv1', )
+$adv2-name: 'adv2'
+$adv2-x: 140px
+$adv2-y: 0px
+$adv2-offset-x: -140px
+$adv2-offset-y: 0px
+$adv2-width: 140px
+$adv2-height: 100px
+$adv2-total-width: 280px
+$adv2-total-height: 200px
+$adv2-image: 'adv.png'
+$adv2: (140px, 0px, -140px, 0px, 140px, 100px, 280px, 200px, 'adv.png', 'adv2', )
+$adv3-name: 'adv3'
+$adv3-x: 0px
+$adv3-y: 100px
+$adv3-offset-x: 0px
+$adv3-offset-y: -100px
+$adv3-width: 140px
+$adv3-height: 100px
+$adv3-total-width: 280px
+$adv3-total-height: 200px
+$adv3-image: 'adv.png'
+$adv3: (0px, 100px, 0px, -100px, 140px, 100px, 280px, 200px, 'adv.png', 'adv3', )
+$spritesheet-width: 280px
+$spritesheet-height: 200px
+$spritesheet-image: 'adv.png'
+$spritesheet-sprites: ($adv1, $adv2, $adv3, )
+$spritesheet: (280px, 200px, 'adv.png', $spritesheet-sprites, )
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+    // CSS
+    .icon {
+      display: inline-block;
+    }
+
+    // HTML
+    <i class="icon icon-home"></i>
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

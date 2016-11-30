@@ -9,32 +9,25 @@ var haml = require('gulp-haml');
 var browserSync = require('browser-sync');
 var concat = require('gulp-concat');
 var spritesmith = require('gulp.spritesmith');
-
-
-
+var postcss = require('gulp-postcss');
 var input_sass = 'app/componets/*.+(scss|sass)';
 var output_sass = 'app/dev/css/';
+var bourbon = require('node-bourbon');
 
 var input_haml = 'app/pages/*.haml';
 var output_haml = 'app/dev/';
 
 
-//var autoprefixerOptions = {
-//  browsers: ['last 25 versions',]
-//};
-
-
-
 gulp.task('sprite', function() {
     var spriteData = 
-        gulp.src('app/static/ico/*.*') // путь, откуда берем картинки для спрайта
+        gulp.src('app/static/img/adv/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: 'sprite.sass',
+                imgName: 'adv.png',
+                cssName: 'adv.sass',
                 cssFormat: 'sass'
             }));
 
-    spriteData.img.pipe(gulp.dest('app/dev/img/')); // путь, куда сохраняем картинку
+    spriteData.img.pipe(gulp.dest('app/dev/img/adv')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('app/static/sass/')); // путь, куда сохраняем стили
 });
 
@@ -42,7 +35,7 @@ gulp.task('sprite', function() {
 gulp.task('autoprefixer', () =>
     gulp.src('app/components/*.+(scss|sass)')
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 5 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('dist'))
@@ -52,6 +45,11 @@ gulp.task('autoprefixer', () =>
 
 gulp.task('sass', function () {
   return gulp.src('app/components/*.+(scss|sass)')
+    .pipe(sass({
+      // includePaths: require('node-bourbon').with('other/path', 'another/path') 
+      // - or - 
+      includePaths: require('node-bourbon').includePaths
+     }))
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.init())
     .pipe(autoprefixer())
