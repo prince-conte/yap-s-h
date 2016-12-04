@@ -575,7 +575,7 @@ article {
 
 p {
   font-size: 16px;
-  color: #1f1f1f;
+  color: #2d3e50;
   display: block;
   line-height: 1.3;
   margin: 0px;
@@ -948,7 +948,7 @@ h5 {
   margin-bottom: 28px; }
 
 .special .title-description p {
-  color: #1f1f1f; }
+  color: #2d3e50; }
 
 .special .title-description p a {
   color: #03a9f4; }
@@ -1095,7 +1095,7 @@ h5 {
   margin: 20px 0 15px; }
 
 .everything-just .header_op-txt {
-  color: #1f1f1f; }
+  color: #2d3e50; }
 
 .everything-just__grid {
   display: -webkit-box;
@@ -1327,5 +1327,281 @@ h5 {
   position: absolute;
   left: -7px;
   top: -7px; }
+
+.latest-posts {
+  padding: 60px 0; }
+
+.latest-posts h3 {
+  margin-bottom: 40px; }
+
+.latest-posts .button-block {
+  margin: 4px 0; }
+
+.latest-posts__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.latest-posts__item {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  margin-bottom: 40px; }
+
+.latest-posts__item:hover .latest-posts__item_title {
+  color: #2ea0f0; }
+
+.latest-posts__item span {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  line-height: 16px; }
+
+.latest-posts__item__image {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: inherit;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px; }
+
+.latest-posts__item__image img {
+  width: inherit;
+  height: auto; }
+
+.latest-posts__item_title {
+  font-size: 18px;
+  text-align: left;
+  color: #03a9f4;
+  line-height: 18px;
+  font-family: "Conv_Proxima_Nova_Bold", sans-serif; }
+
+.latest-posts__item_date {
+  color: #7f8c8d; }
+
+.latest-posts__item_money {
+  color: #2d3e50; }
+
+.questions {
+  padding: 80px 0 60px;
+  background-color: #f8f8f8;
+  background-image: url(../img/elips.png);
+  background-repeat: repeat-x;
+  background-position: center 10px; }
+
+.questions h4 {
+  margin-bottom: 40px; }
+
+.questions__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 40px; }
+
+.questions__item {
+  display: inherit;
+  width: 33.33333%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.questions__item_title {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  color: #2d3e50;
+  text-align: center;
+  display: block; }
+
+.questions__item_link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #2d3e50;
+  text-align: center;
+  font-family: "Conv_Proxima_Nova_Bold", sans-serif;
+  font-size: 24px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.questions_description p {
+  text-align: center; }
+
+.questions_description p a {
+  color: #03a9f4;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.questions_description p a:hover {
+  color: #2ea0f0; }
+
+.footer {
+  padding: 44px 0 40px;
+  background: #2d3e50; }
+
+.footer__navigate__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer__navigate {
+  display: inherit;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.footer__navigate__ul {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.footer__navigate__ul li {
+  line-height: 12px;
+  margin-bottom: 14px; }
+
+.footer__navigate__ul a {
+  color: #d7dcde;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.footer__navigate__ul a:hover {
+  color: #03a9f4; }
+
+.footer__navigate__ul--one {
+  width: 160px; }
+
+.footer__navigate__ul--two {
+  width: 240px; }
+
+.footer__navigate__ul--three {
+  width: 220px; }
+
+.footer__copy {
+  width: 220px; }
+
+.footer__copy .button-block {
+  margin-top: -5px;
+  margin-bottom: 28px;
+  text-align: left; }
+
+.footer__copy_txt {
+  color: #7f8c8d;
+  display: block;
+  margin-bottom: 14px;
+  line-height: 16px; }
+
+.footer__copy_txt a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: inherit;
+  margin-left: 5px;
+  display: inline-block; }
+
+.footer__copy_txt a:hover {
+  color: #fff; }
+
+.popup-fade {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: #03a9f4;
+  opacity: .7;
+  z-index: 10000; }
+
+.all-popup {
+  height: 100%;
+  position: fixed;
+  z-index: 10001;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.all-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #d7dcde; }
+
+.all-close span {
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 14px;
+  left: 8px; }
+
+.all-close span:before {
+  content: '';
+  position: absolute; }
+
+.all-popup__body {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+  padding: 45px 0; }
+
+.all-site {
+  background: #fff;
+  border-radius: 5px;
+  min-height: 1000px;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
