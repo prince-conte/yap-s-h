@@ -1550,6 +1550,7 @@ h5 {
 
 .popup-fade {
   position: fixed;
+  display: none;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -1566,7 +1567,8 @@ h5 {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .all-close {
   position: absolute;
