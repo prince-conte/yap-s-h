@@ -3,8 +3,13 @@
 %html(lang="ru")
   %head
     %title Myspace
+    %meta(charset="utf-8")
+    %meta(content="ie=edge" http-equiv="x-ua-compatible")
+    %meta(name="description" content="") 
+    %meta(name="keywords" content="сайты, интерфейсы, приложения, программинг")
     %link(rel="stylesheet" type="text/css" href="css/style.css")
     %script(type="text/javascript" src="js/main.js")
+<meta name="keywords"
   %body
     %header.header
         .header_fade
@@ -14,7 +19,7 @@
                 %article
                     %h2 Хотите быстро продать или сдать недвижимость?
                     %div.title-description
-                        %p AidSale – это сервис, позволяющий разместить Ваше объявление одновременно на <br> <a href="#" alt="">65 сайтах</a> с аудиторией более    <b>10 000 000</b> человек
+                        %p AidSale – это сервис, позволяющий разместить Ваше объявление одновременно на <br> <a href="#">65 сайтах</a> с аудиторией более    <b>10 000 000</b> человек
                     .button-block
                         %a.button-blue(href="#") Попробуйте бесплатно
                     
@@ -25,7 +30,7 @@
                 %ul.header__menu
                     %li.header__logo
                         %a(href="#")
-                            %img(src="img/logo.png")
+                            %img(src="img/logo.png" alt="AidSale")
                             
                     %li
                         %a(href="#")
@@ -40,22 +45,22 @@
             .logo-sites
             
                 .logo-sites__item
-                    %img(src="img/logo/avito.png")
+                    %img(src="img/logo/avito.png" alt="авито")
                    
                 .logo-sites__item
-                    %img(src="img/logo/mail.png")
+                    %img(src="img/logo/mail.png" alt="мэйл")
                    
                 .logo-sites__item
-                    %img(src="img/logo/ya.png")
+                    %img(src="img/logo/ya.png" alt="яндекс")
                            
                 .logo-sites__item
-                    %img(src="img/logo/cian.png")
+                    %img(src="img/logo/cian.png" alt="циан")
                                    
                 .logo-sites__item
-                    %img(src="img/logo/mail.png")
+                    %img(src="img/logo/mail.png" alt="мэйл")
                                            
                 .logo-sites__item
-                    %img(src="img/logo/avito.png")
+                    %img(src="img/logo/avito.png" alt="авито")
                     
     %section.type-services
         .content
@@ -154,7 +159,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                       
@@ -164,7 +169,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                       
@@ -174,7 +179,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                       
@@ -187,7 +192,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                 
@@ -201,7 +206,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                       
@@ -211,7 +216,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                       
@@ -221,7 +226,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
                       
@@ -234,7 +239,7 @@
                     
                     .comments__item__signature
                         .comments__item_ava
-                            %img(src="img/ava.jpg")
+                            %img(src="img/ava.jpg" alt="Иосиф Сталин")
                         %span.comments__item_name Иосиф Сталин
                         %span.comments__item_date 20 мая 2015
         .button-block
@@ -340,42 +345,42 @@
             
                  %a.latest-posts__item
                    .latest-posts__item__image
-                        %img(src="img/post1.jpg")
+                        %img(src="img/post1.jpg" alt="Коттедж")
                     %h5.latest-posts__item_title Очень хороший дом!<br> Коттедж 240 м² на участке 17 сот.
                     %span.latest-posts__item_date № 1536 / 4 мая 2013
                     %span.latest-posts__item_money 12 000 000 руб.
                     
                  %a.latest-posts__item
                    .latest-posts__item__image
-                        %img(src="img/post1.jpg")
+                        %img(src="img/post1.jpg" alt="Коттедж")
                     %h5.latest-posts__item_title Коттедж 240 м² на участке 17 сот.
                     %span.latest-posts__item_date № 1536 / 4 мая 2013
                     %span.latest-posts__item_money 12 000 000 руб.
                     
                  %a.latest-posts__item
                    .latest-posts__item__image
-                        %img(src="img/post1.jpg")
+                        %img(src="img/post1.jpg" alt="Коттедж")
                     %h5.latest-posts__item_title Коттедж 240 м² на участке 17 сот.
                     %span.latest-posts__item_date № 1536 / 4 мая 2013
                     %span.latest-posts__item_money 12 000 000 руб.
                     
                  %a.latest-posts__item
                    .latest-posts__item__image
-                        %img(src="img/post1.jpg")
+                        %img(src="img/post1.jpg" alt="Коттедж")
                     %h5.latest-posts__item_title Коттедж 240 м² на участке 17 сот.
                     %span.latest-posts__item_date № 1536 / 4 мая 2013
                     %span.latest-posts__item_money 12 000 000 руб.
                     
                  %a.latest-posts__item
                    .latest-posts__item__image
-                        %img(src="img/post1.jpg")
+                        %img(src="img/post1.jpg" alt="Коттедж")
                     %h5.latest-posts__item_title Коттедж 240 м² на участке 17 сот.
                     %span.latest-posts__item_date № 1536 / 4 мая 2013
                     %span.latest-posts__item_money 12 000 000 руб.
                             
                  %a.latest-posts__item
                    .latest-posts__item__image
-                        %img(src="img/post1.jpg")
+                        %img(src="img/post1.jpg" alt="Коттедж")
                     %h5.latest-posts__item_title Коттедж 240 м² на участке 17 сот.
                     %span.latest-posts__item_date № 1536 / 4 мая 2013
                     %span.latest-posts__item_money 12 000 000 руб.
